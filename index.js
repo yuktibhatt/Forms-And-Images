@@ -16,6 +16,11 @@ app.get("/myget", (req,res) => {
 
     res.send(req.body);
 });
+app.post("/mypost", (req,res) => {
+    console.log(req.body);
+
+    res.send(req.body);
+});
 
 app.get("/mygetform", (req,res) => {
     res.render("getform");
